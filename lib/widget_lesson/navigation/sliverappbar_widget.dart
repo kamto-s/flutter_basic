@@ -21,8 +21,11 @@ class SliverappbarWidgetView extends StatelessWidget {
         body: ListView.separated(
           itemCount: 99,
           itemBuilder: (context, index) {
-            return ListTile(
-              title: Text("item ${index + 1}"),
+            return Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: ListTile(
+                title: Text("item ${index + 1}"),
+              ),
             );
           },
           separatorBuilder: (context, index) {
